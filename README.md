@@ -10,7 +10,7 @@ This project is a simple frontend website. I made it to learn Vue.js.
 * Fully mobile responsive.
 
 ## Website url:
-[https://macszymon.github.io/ecommerce-app/](https://macszymon.github.io/ecommerce-app/)
+[https://macszymon.github.io/tvshows-app/](https://macszymon.github.io/tvshows-app/)
 
 ## Technologies
 Project is created with:
