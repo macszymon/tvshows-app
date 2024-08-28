@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #F5C518;
+  --color-neutral-600: #080808;
+  --color-neutral-500: #0E0E0E;
+  --color-neutral-400: #1A1A1A;
+  --color-neutral-300: #797979;
+  --color-neutral-200: #C3C3C3;
+  --color-neutral-100: #FFFFFF;
+  --color-neutral-300-transparent: rgba(163,163,163, 0.2);
+}
+
+body {
+  background-color: var(--color-neutral-500);
+  color: var(--color-neutral-200);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--color-neutral-200);
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1350px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.spinner {
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+}
+
+.logo {
+    height: 2.5rem;
+}
+
+.logo__img {
+    height: 100%;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: .25rem;
+  color: var(--color-neutral-600);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  min-width: 12rem;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-neutral-300-transparent);
+  color: var(--color-primary)
+}
+
+.link {
+  background-color: transparent;
+  border: none;
+  color: var(--color-neutral-200);
+  font-size: 1rem;
+  position: relative;
+}
+
+.link::after {
+  background-color: var(--color-primary);
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transition: 0.3s ease-in-out;
+  width: 0;
+}
+
+.link:hover::after {
+  width: 100%;
+}
